@@ -1,19 +1,14 @@
 .nav a {
-    color: white;
-    background-color: black;
+    color: black;
     font-size: 14px;
-    font-weight: bold;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
     text-transform: uppercase
-    font-family: ;
+}
+
+.nav li{
+	display: inline
 }
 
 .jumbotron {
-    color: white;
-    background-color: black;
-    height: 500px;
+    height: 400px;
     background-image: url('http://goo.gl/04j7Nn');   
 }
