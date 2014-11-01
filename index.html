@@ -1,36 +1,55 @@
-<!DOCTYPE html>
-
+<!DOCTYPE HTML>
 <html>
 
 <head>
-	<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link href="main.css" rel="stylesheet">
- </head>
+  <title>Francis Abreu</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
 
-
-<body>
-	<div class="nav">
-		<div class="container">
-
-			<ul class="nav nav-tabs">
-				<li class="active"><a href="#">About</a></li>
-          		<li><a href="#">Teaching</a></li>
-          		<li><a href="#">Research</a></li>
-          		<li><a href="#">CV</a></li>
-          		<li><a href="#">Resources</a></li>
-			</ul>
-		</div>
-	</div>
-
-
-	<div class="jumbotron">
-		<div class="container">	
-			<h1>Francis Abreu</h1>
-			<p> Welcome to my first attemp to create a personal webpage! </p>	
-		</div>
-	</div>
-
+<body>  
+  <div id="main">
+    <header>
+      <div id="logo"><h1>FrancisAbreu</h1></div>
+      <nav>
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li class="current"><a href="index.html">about me</a></li>
+          <li><a href="teaching.html">teaching</a></li>
+          <li><a href="research.html">research</a></li>
+          <li><a href="cv.html">cv</a></li>
+          <li><a href="resources.html">resources</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div id="sidebar_container">
+          <img style="position:relative; top:25px; left:25px; width:389px; height:500px" src="images/francis_abreu.jpg" alt="francis_abreu" />
+      </div>
+      <div id="content">
+        <h1>Hello!</h1>
+        <p>I am a 5th year PhD candidate in the Department of Biostatistics at the Johns Hopkins Bloomberg School of Public Health.</p>
+        <p>My area of interest is complex models for clustered longitudinal data. For my dissertation, I am working with Scott Zeger and Elizabeth Johnson integrating models to assess gender disparities in academic rewards. Additionally, we are working on assesing information sources in stepped wedge study designs.<p>
+        <p>I am also a research assistant at the Hopkins Center for Clinical Trials, where I work closely with Elizabeth Sugar and collaborate with researchers at the National Eye Institute and the University of Melbourne analyzing data from the MUST trial.</p>
+        <p>I graduated Summa Cum Laude from the Universidad Central de Venezuela (UCV), with a bachelor in Statistical Sciences and later a Specialization in Statistics. Before coming to Hopkins, I worked for the UNDP developing strategies to strengthen Venezuela's public health statistical system and the Instituto Delphos as a senior statistician analyzing phase IV clinical trials. I was also an instructor at the School of Statistics of the UCV for 4 years, where I co-taught the Sampling and Statistical Inference courses at undergraduate level. </p>
+      </div>
+    </div>
+   
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript" src="js/image_fade.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
 </body>
-
 </html>
-
