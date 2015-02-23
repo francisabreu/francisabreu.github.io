@@ -736,7 +736,7 @@ a.sb.rss,
 
 a.sb.github,
 .sb a.github {
-	background-image: url(../images/github.png);
+	background-image: url(../images/email.png);
 }
 
 a.sb.share_this,
@@ -951,6 +951,7 @@ a.sb.gray.vimeo,
 a.sb.youtube {
 	background-image: url(../images/youtube.png);
 }
+
 a.sb.email {
 	background-image: url(../images/email.png);
 }
